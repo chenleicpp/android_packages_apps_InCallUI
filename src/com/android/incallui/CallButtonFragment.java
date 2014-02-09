@@ -204,15 +204,10 @@ public class CallButtonFragment
     }
 
     @Override
-    public void setEnabled(boolean isEnabled, boolean isVisible) {
+    public void setEnabled(boolean isEnabled) {
         View view = getView();
         if (view.getVisibility() != View.VISIBLE) {
-          if (isVisible) {
             view.setVisibility(View.VISIBLE);
-          }
-        }
-        else if (!isVisible) {
-          view.setVisibility(View.INVISIBLE);
         }
 
         // The main end-call button spanning across the screen.
